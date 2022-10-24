@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,17 @@
     <th:block th:each="msg : ${messages}">
         <h1 th:text="${msg}"></h1>
     </th:block>
+    <br><br>
+    <a href="/cars">Cars</a>
+    <br>
+    <a href="/cars?count=1">1 car</a>
+    <br>
+    <a href="/cars?count=2">2 cars</a>
+    <br>
+    <a href="/cars?count=3">3 cars</a>
+    <br>
+    <a href="/cars?count=6">6 cars</a>
+
 </div>
 </body>
 </html>
